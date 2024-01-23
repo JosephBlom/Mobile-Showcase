@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6620438789114870422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1171779089954564262}
+  - component: {fileID: 7275469951404872541}
+  - component: {fileID: 3186214224958768140}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1171779089954564262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620438789114870422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7740161, y: 0.8384528, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7275469951404872541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620438789114870422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff74f8d5a60066a4ca4a79d95cac5895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawns:
+  - {x: 12.26, y: 3.31, z: 0}
+  - {x: 8.86, y: -6.22, z: 0}
+  - {x: -7.47, y: -7.52, z: 0}
+  - {x: 1.52, y: -5.23, z: 0}
+  - {x: -7.65, y: 4.38, z: 0}
+  - {x: -3.27, y: -1.16, z: 0}
+  - {x: 2.64, y: 3.09, z: 0}
+  - {x: 4.43, y: -4.92, z: 0}
+  - {x: 14, y: -1.34, z: 0}
+  - {x: -8.72, y: -2.77, z: 0}
+  enemies:
+  - enemyPrefab: {fileID: 9010516223332737065, guid: 84861be3ee2fdd9428c7c0befdd4e078, type: 3}
+    cost: 3
+  - enemyPrefab: {fileID: 4556807557249576240, guid: 97242a9e73140844a8e8e40797d8a609, type: 3}
+    cost: 2
+  - enemyPrefab: {fileID: 563118900999911568, guid: ac57082e9bf8dfa40bb2854204b257fb, type: 3}
+    cost: 1
+  currWave: 1
+  waveValue: 0
+  enemiesToSpawn: []
+  waveDuration: 40
+  getAbilities: {fileID: 3186214224958768140}
+--- !u!114 &3186214224958768140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620438789114870422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f485395cd1934b54f9cd8a4561e7583c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreImprovement: {fileID: 6122151632836568719, guid: da5055d2ccd8c9d4aab71974c1bbc8d2, type: 3}
+  newAbilitiy: {fileID: 3677344918757416700, guid: e47cca50666b27144900b5899d24b1b9, type: 3}
+  enemySpawning: {fileID: 7275469951404872541}
+  abilityButton: {fileID: 0}
+  playerManager: {fileID: 5287354793272789976, guid: a1c96d1cbf157ad4f99df40efdace964, type: 3}
+  kunaiManager: {fileID: 4974156358405944424, guid: a1c96d1cbf157ad4f99df40efdace964, type: 3}
+  playerMovement: {fileID: 3916350288526893029, guid: a1c96d1cbf157ad4f99df40efdace964, type: 3}
+  scoreButtonPrefabs:
+  - {fileID: 808281253424717981, guid: cbd0a72a992a74d44be8456b0c04e953, type: 3}
+  - {fileID: 6312731514695894714, guid: 3ee773cbca830dc40aa5446db709c7e3, type: 3}
+  - {fileID: 5671225362508348194, guid: 192843cab9f3d5549b8265640bc90aa4, type: 3}
+  - {fileID: 3877730374922895645, guid: 30627230af49e35428a67ef0da1d718d, type: 3}
+  - {fileID: 5903324659698261113, guid: 5ec6d228fa3b1a9469fff70b64076f1a, type: 3}
+  - {fileID: 1269140906795743173, guid: 193d6291434ae844e8b1b6615a04b2ea, type: 3}
+  - {fileID: 1384503110699810205, guid: ccc2d23b3150233458191843f34330f8, type: 3}
+  - {fileID: 5960030882675571542, guid: 05c8eff70d8db9946b1483de85c9a035, type: 3}
+  abilityButtonPrefabs: []
+  scoreButtons:
+  - {fileID: 1424189542868232715, guid: 8fad909dba9ec6b459f8c78f65f195a3, type: 3}
+  - {fileID: 843879068392056204, guid: b9b3b1c02ed8c6544b8da6d4a49a303f, type: 3}
+  - {fileID: 204610402082883281, guid: 2fb81e16741005841ae50278e4d58ae5, type: 3}
